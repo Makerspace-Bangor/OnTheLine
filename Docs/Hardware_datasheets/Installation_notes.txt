@@ -1,0 +1,61 @@
+Tools → Board: select Arduino UNO Q
+Sketch → Include Library → Manage Libraries
+Search Arduino_RouterBridge
+Install the official Arduino library, currently listed for zephyr architecture.
+Compile again.
+
+l@cker:~/bin$ man ln -s
+No manual entry for -s
+l@cker:~/bin$ ln -s /home/l/bin/arduino-ide_2.3.8_Linux_64bit/resources/app/lib/backend/resources/arduino-cli /home/l/bin/arduino-cli
+l@cker:~/bin$ arduino-cli lib install Arduino_RouterBridge
+
+Arduino CLI
+arduino-cli lib install Arduino_RouterBridge
+arduino-cli compile --fqbn arduino:zephyr:arduino_uno_q_stm32u585xx Test1
+
+l@cker:~/Desktop/OnTheLine/Eth_onTheLine$ arduino-cli compile --fqbn arduino:zephyr:arduino_uno_q_stm32u585xx Eth_onTheLine.ino Error during build: Invalid FQBN: board arduino:zephyr:arduino_uno_q_stm32u585xx not found
+
+arduino-cli core update-index
+
+l@cker:~/Desktop/OnTheLine/Eth_onTheLine$ arduino-cli core list
+ID             Installed Latest Name
+adafruit:nrf52 1.7.0     1.7.0  Adafruit nRF52 Boards
+arduino:avr    1.8.7     1.8.7  Arduino AVR Boards
+arduino:samd   1.8.14    1.8.14 Arduino SAMD Boards (32-bits ARM Cortex-M0+)
+arduino:zephyr 0.55.0    0.55.0 Arduino UNO Q Board
+teensy:avr     1.60.0    1.60.0 Teensy (for Arduino IDE 2.0.4 or later)
+
+l@cker:~/Desktop/OnTheLine/Eth_onTheLine$ arduino-cli board listall | grep -i "uno q\|uno_q\|zephyr"
+Arduino UNO Q                         arduino:zephyr:unoq
+
+l@cker:~/Desktop/OnTheLine/Eth_onTheLine$ arduino-cli board listall | grep -i uno
+Arduino UNO                           arduino:avr:uno
+Arduino UNO Mini                      arduino:avr:unomini
+Arduino UNO Q                         arduino:zephyr:unoq
+Arduino UNO WiFi                      arduino:avr:unowifi
+
+#### Different errors Hurray!
+l@cker:~/Desktop/OnTheLine/Eth_onTheLine$ arduino-cli compile --fqbn arduino:zephyr:unoq .
+/home/l/Desktop/OnTheLine/Eth_onTheLine/Eth_onTheLine.ino:1:10: fatal error: Ethernet.h: No such file or directory
+    1 | #include <Ethernet.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+
+Used library         Version Path
+Arduino_RouterBridge 0.4.1   /home/l/Arduino/libraries/Arduino_RouterBridge
+Arduino_RPClite      0.2.1   /home/l/Arduino/libraries/Arduino_RPClite
+MsgPack              0.4.2   /home/l/Arduino/libraries/MsgPack
+DebugLog             0.8.4   /home/l/Arduino/libraries/DebugLog
+ArxTypeTraits        0.3.2   /home/l/Arduino/libraries/ArxTypeTraits
+ArxContainer         0.7.0   /home/l/Arduino/libraries/ArxContainer
+
+Used platform  Version Path
+arduino:zephyr 0.55.0  /home/l/.arduino15/packages/arduino/hardware/zephyr/0.55.0
+Error during build: exit status 1
+
+
+###################### WORKS!!!! ##########################
+l@cker:~/Desktop/OnTheLine/Test1$ arduino-cli compile --fqbn arduino:zephyr:unoq .
+Sketch uses 34705 bytes (4%) of program storage space. Maximum is 786432 bytes.
+Global variables use 10357 bytes (7%) of dynamic memory, leaving 120715 bytes for local variables. Maximum is 131072 bytes.
+

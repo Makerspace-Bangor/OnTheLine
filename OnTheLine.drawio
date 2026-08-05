@@ -1,0 +1,231 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="JwP66LXtEgQNLQgbGaA0">
+    <mxGraphModel dx="3208" dy="3520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-36" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" value="My Human-Machine Interface System" vertex="1">
+          <mxGeometry height="40" width="320" x="425" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Operator" vertex="1">
+          <mxGeometry height="80" width="140" x="100" y="682.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="HMI Panel&#xa;Display &amp; Controls" vertex="1">
+          <mxGeometry height="80" width="140" x="280" y="682.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="PLC / Controller&#xa;Logic &amp; Interlocks" vertex="1">
+          <mxGeometry height="80" width="140" x="460" y="682.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="690" y="562.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Actuators&#xa;Motors &amp; Valves" vertex="1">
+          <mxGeometry height="80" width="140" x="690" y="682.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-42" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="vt-yzsar7zu1P_ivtMbo-38" value="Commands">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-43" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-38" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="vt-yzsar7zu1P_ivtMbo-39" value="Control data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-44" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="vt-yzsar7zu1P_ivtMbo-38" value="Status / Alarms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-45" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-40" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="vt-yzsar7zu1P_ivtMbo-39" value="Measurements">
+          <mxGeometry relative="1" x="-0.1579" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-46" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="vt-yzsar7zu1P_ivtMbo-41" value="Control signals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-47" parent="1" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.sd_wan;" value="" vertex="1">
+          <mxGeometry height="69.94" width="70" x="350" y="542.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-48" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" value="coms">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="592.5999999999999" as="sourcePoint" />
+            <mxPoint x="300" y="672.5999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-49" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;entryX=0.364;entryY=-0.037;entryDx=0;entryDy=0;entryPerimeter=0;" target="vt-yzsar7zu1P_ivtMbo-39" value="coms">
+          <mxGeometry relative="1" x="-0.3684" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="470" y="562.5999999999999" as="sourcePoint" />
+            <mxPoint x="580" y="642.5999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-50" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" value="" vertex="1">
+          <mxGeometry height="44.1" width="70" x="490" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-51" edge="1" parent="1" source="vt-yzsar7zu1P_ivtMbo-50" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" value="coms">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="447.5999999999999" as="sourcePoint" />
+            <mxPoint x="420" y="542.5999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-52" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.arduino;fillColor=#36868D;strokeColor=none" value="" vertex="1">
+          <mxGeometry height="32" width="67.4" x="116.30000000000001" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-53" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;entryX=0.364;entryY=-0.037;entryDx=0;entryDy=0;entryPerimeter=0;" value="coms">
+          <mxGeometry relative="1" x="-0.3684" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="190" y="554.0999999999999" as="sourcePoint" />
+            <mxPoint x="351" y="554.0999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-54" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" value="Measurements">
+          <mxGeometry relative="1" x="-0.1579" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="310" y="460" as="sourcePoint" />
+            <mxPoint x="150" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vt-yzsar7zu1P_ivtMbo-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="260" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-1" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" value="Traditional Human-Machine Interface System" vertex="1">
+          <mxGeometry height="40" width="320" x="270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Operator" vertex="1">
+          <mxGeometry height="80" width="140" x="90" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="HMI Panel&#xa;Display &amp; Controls" vertex="1">
+          <mxGeometry height="80" width="140" x="270" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="PLC / Controller&#xa;Logic &amp; Interlocks" vertex="1">
+          <mxGeometry height="80" width="140" x="450" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="680" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Actuators&#xa;Motors &amp; Valves" vertex="1">
+          <mxGeometry height="80" width="140" x="680" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-7" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-3" value="Commands">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-8" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-4" value="Control data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-9" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-3" value="Status / Alarms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-10" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-4" value="Measurements">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-11" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-6" value="Control signals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-12" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" value="My Alt1 Human-Machine Interface System" vertex="1">
+          <mxGeometry height="40" width="320" x="270" y="888" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Operator" vertex="1">
+          <mxGeometry height="80" width="140" x="105" y="1172.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="HMI Panel&#xa;Display &amp; Controls" vertex="1">
+          <mxGeometry height="80" width="140" x="285" y="1172.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="PLC / Controller&#xa;Logic &amp; Interlocks" vertex="1">
+          <mxGeometry height="80" width="140" x="465" y="1172.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="695" y="1052.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Actuators&#xa;Motors &amp; Valves" vertex="1">
+          <mxGeometry height="80" width="140" x="695" y="1172.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-18" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-14" value="Commands">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-19" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-15" value="Control data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-20" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-14" value="Status / Alarms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-21" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-15" value="Measurements">
+          <mxGeometry relative="1" x="-0.1579" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-22" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-17" value="Control signals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-24" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" value="coms">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="1067.5172413793102" as="sourcePoint" />
+            <mxPoint x="305" y="1162.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-28" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.arduino;fillColor=#36868D;strokeColor=none" value="" vertex="1">
+          <mxGeometry height="32" width="67.4" x="363" y="1052.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-30" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-31" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="Measurements">
+          <mxGeometry relative="1" x="-0.1579" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="555" y="972.5999999999999" as="sourcePoint" />
+            <mxPoint x="395" y="1052.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="695" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-32" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" value="My Alt2 Human-Machine Interface System" vertex="1">
+          <mxGeometry height="40" width="320" x="145" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Operator" vertex="1">
+          <mxGeometry height="80" width="140" x="105" y="1684.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="HMI Panel&#xa;Display &amp; Controls" vertex="1">
+          <mxGeometry height="80" width="140" x="285" y="1684.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="PLC / Controller&#xa;Logic &amp; Interlocks" vertex="1">
+          <mxGeometry height="80" width="140" x="465" y="1684.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="695" y="1564.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Actuators&#xa;Motors &amp; Valves" vertex="1">
+          <mxGeometry height="80" width="140" x="695" y="1684.6" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-38" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-33" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-34" value="Commands">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-39" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-35" value="Control data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-40" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-35" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-34" value="Status / Alarms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-41" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-36" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-35" value="Measurements">
+          <mxGeometry relative="1" x="-0.1579" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-42" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-35" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="1r00IurPCVXVds6t2naM-37" value="Control signals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-43" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" value="coms">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="1580" as="sourcePoint" />
+            <mxPoint x="500" y="1682.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-44" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.arduino;fillColor=#36868D;strokeColor=none" value="" vertex="1">
+          <mxGeometry height="32" width="67.4" x="485" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-45" edge="1" parent="1" source="1r00IurPCVXVds6t2naM-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="1r00IurPCVXVds6t2naM-44" value="Measurements">
+          <mxGeometry relative="1" x="-0.1579" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="555" y="1484.6" as="sourcePoint" />
+            <mxPoint x="395" y="1564.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1r00IurPCVXVds6t2naM-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Sensors&#xa;Process Inputs" vertex="1">
+          <mxGeometry height="80" width="140" x="695" y="1462" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

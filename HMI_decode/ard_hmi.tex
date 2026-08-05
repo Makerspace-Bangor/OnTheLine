@@ -1,0 +1,50 @@
+\documentclass[]{article}
+
+%opening
+\title{Add a screen to your micro controller with an IDEC HMI!}
+\author{Senju}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{abstract}
+		There are many Micro Controller development boards capable of handling video, yet many popular models have no such capability. Arduino UNO, Mega, teensy, to name a few.
+		IDEC HMIs have a unique approach to its programming which makes it possible to add a screen to projects which ordinarily would be unable to support one. 
+	\end{abstract}
+	\section*{Motivation} This project could be achieved in a variety of ways, using the same hardware, with different software configurations, or by utilizing different hardware. 
+	I happen to have several IDEC HG2J HMIs laying around, so I used them. 
+	In this implementation, we utilize Maintenance Protocol the native communication for IDEC products. Adding a screen to an arduino Mega, using maintenance protocol on the HMI means we 
+	can skip the step of pawing through HMI configurations, and get right to knocking out a project.  I coded this in C, but other languages could work.  
+	
+	\section*{How does it work?}
+	The hack of using the HMI is that the HMI uses a preformed GUI to populate screen elements. The Arduino doesn't have to handle the visual components at all, it just sends data to the HMI to be rendered.
+	Because of how the IDEC HMI works, independent of data stream, the HMI reads registers, and displays them on screen. 
+	\section*{implementation}
+	To build this project, or one like it you will need:
+	An IDEC HMI
+	An Arduino
+	A network connection, I used a WIZ1000 Ethernet shield.
+	An ethernet cable. 
+	
+	Nice to have: a Ethernet switch, additional ethernet cables. 
+	
+	\section*{set up}
+	I would call this initialization, but IDEC uses the term initialization to mean factory reset.
+	Plug 24 VDC into the HMI.
+	Design your GUI.
+	Download your GUI.
+	
+	\section*{supporting software}
+	I used Geany to write the code base, with Arduino build and compile macros. 
+	NV4 was used to build and download the GUI
+	\section*{other methods}
+	Other methods using the same hardware exist; you could implement similar functionality using modbus, mqtt,  FTP or serial, but I find the other methods of implementation tedious. 
+	\section*{Notes:}
+	Current implementation is read only. The HMI requests data from the Arduino.
+	While it is possible to send instructions, to the Arduino, I haven't gotten that far yet.
+	
+	\section*{}
+	\section*{}
+	
+\end{document}
